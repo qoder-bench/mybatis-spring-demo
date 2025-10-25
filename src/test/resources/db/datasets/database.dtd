@@ -1,0 +1,26 @@
+<!ELEMENT dataset (
+    flyway_schema_history*,
+    lego_set*,
+    manual*,
+    model*)>
+
+<!ELEMENT flyway_schema_history EMPTY>
+<!ATTLIST flyway_schema_history
+    installed_rank CDATA #REQUIRED
+    version CDATA #IMPLIED
+    description CDATA #REQUIRED
+    type CDATA #REQUIRED
+    script CDATA #REQUIRED
+    checksum CDATA #IMPLIED
+    installed_by CDATA #REQUIRED
+    installed_on CDATA #IMPLIED
+    execution_time CDATA #REQUIRED
+    success CDATA #REQUIRED
+>
+
+<!ELEMENT lego_set EMPTY>
+<!ATTLIST lego_set
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+>
+

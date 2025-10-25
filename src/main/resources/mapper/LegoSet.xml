@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mvnsearch.mybatis.demo.repo.LegoSetMapper">
+
+    <resultMap id="LegoSetRS" type="LegoSet">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+
+    <select id="findById" resultMap="LegoSetRS" parameterType="int">
+        select id, name
+        from lego_set
+        where id = #{id:INTEGER}
+    </select>
+
+    <select id="findByName" resultMap="LegoSetRS" parameterType="string">
+        SELECT id, name
+        FROM lego_set
+        WHERE name = #{name:VARCHAR}
+    </select>
+
+</mapper>
