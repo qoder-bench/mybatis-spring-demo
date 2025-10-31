@@ -1,18 +1,20 @@
-# 新需求
+# New Requirement
 
-请创建`shop`表，包括`id`、`name`和`address`三个column，同时完成以下工作：
+Please create a `shop` table with three columns: `id`, `name`, and `address`, and complete the following work:
 
-- 创建`shop`表，最新flyway的结构
-- 创建ShopMapper类，负责和MyBatis进行交互，同时完成ShopMapper在MyBatisConfiguration类中的bean注册
-- 创建MyBatis的SQL XML Mapper文件
-- 完成对应的测试用例创建
+- Create the `shop` table following the latest Flyway structure
+- Create ShopMapper class responsible for interacting with MyBatis, and complete ShopMapper bean registration in the MyBatisConfiguration class
+- Create MyBatis SQL XML Mapper file
+- Complete corresponding test case creation
 
-请参考LegoSet的带实现，完成Shop的创建。
+Please refer to the LegoSet implementation to complete the Shop creation.
 
-# 代码重构
+# Code Refactoring
 
-请为`lego_set`表添加`description`列，类型为`varchar(256)`，请同步完成以下工作：
+Please add a `description` column to the `lego_set` table with type `varchar(256)`, and synchronously complete the following work:
 
-- 更新LegoSet类，添加`description`属性
-- 为`lego-set.xml`添加description样例数据
-- 调整`LegoSet.xml`文件，增加`description`列支持
+- Update the LegoSet class to add the `description` property
+- Add description sample data to `lego-set.xml`
+- Adjust the `LegoSet.xml` file to add support for the `description` column
+
+
